@@ -39,7 +39,7 @@ By the assumed smoothness/Lipschitz regularity of $\Pi$ and $k(\cdot)$, the comp
 Let
 
 $$
-d(x) := \operatorname{dist}(x,\mathcal{P}), \quad x\in U_\rho.
+d(x) := \mathrm{dist}(x, \mathcal{P}), \quad x \in U_\rho.
 $$
 
 For a sufficiently small $\rho$, $d$ is $C^1$ on $U_\rho\setminus\mathcal{P}$ and its gradient $\nabla d(x)$ is orthogonal to the tangent space $T_{\Pi(x)}\mathcal{P}$ with $\|\nabla d(x)\|=1$. Define the Lyapunov function:
