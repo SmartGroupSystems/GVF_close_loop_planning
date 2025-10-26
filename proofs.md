@@ -1,3 +1,4 @@
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 ## Lemma 1: Convergence of the Guiding Vector Field
 
 **Lemma.** Let ( \mathcal{P}\subset\mathbb{R}^n ) be a smooth path, and suppose there exists a mapping operator ( \Pi ) that assigns to each point ( \xi\in\mathcal{P} ) a pair of normalized vectors ( \big(\boldsymbol{t}(\xi),\boldsymbol{n}(\xi)\big) ), where ( \boldsymbol{t}(\xi) ) is tangent to ( \mathcal{P} ) and ( \boldsymbol{n}(\xi) ) is linearly independent of ( \boldsymbol{t}(\xi) ). Consider the guiding vector field
