@@ -1,6 +1,6 @@
 ### Lemma (Guiding Vector Field and Convergence)
 
-**Lemma.** Let $$\mathcal P\subset\mathbb R^n$$ be a smooth path. Assume there exists a mapping operator $$\Pi$$ assigning to each $$\xi\in\mathcal P$$ a pair of unit, linearly independent vectors $$(\mathbf t(\xi),\mathbf n(\xi))$$ with $$\mathbf t(\xi)$$ tangent to $$\mathcal P$$ and $$\mathbf n(\xi)$$ pointing (transversally) toward the path. Consider the guiding vector field
+**Statement.** Let $$\mathcal P\subset\mathbb R^n$$ be a smooth path. Assume there exists a mapping operator $$\Pi$$ assigning to each $$\xi\in\mathcal P$$ a pair of unit, linearly independent vectors $$(\mathbf t(\xi),\mathbf n(\xi))$$ with $$\mathbf t(\xi)$$ tangent to $$\mathcal P$$ and $$\mathbf n(\xi)$$ pointing (transversally) toward the path. Consider the guiding vector field
 $$
 \chi(\xi)=\mathbf t(\xi)+k(\xi)\,\mathbf n(\xi),\qquad k(\xi)>0.
 $$
