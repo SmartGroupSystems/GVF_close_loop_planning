@@ -1,8 +1,3 @@
-好的，以下是完全使用 `$$` 包裹公式的 **GitHub README 可渲染版本**（兼容 MathJax 渲染的 Markdown，建议放在 `README.md` 中直接使用）。
-所有公式都统一改成 `$$ ... $$` 形式，避免渲染不全的问题：
-
----
-
 ### Lemma: Guiding Vector Field Construction
 
 **Lemma.**
