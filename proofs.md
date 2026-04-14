@@ -84,38 +84,49 @@ We further strengthen the theoretical analysis based on the above Lyapunov frame
 #### **1) Quantitative convergence rate**
 
 In the above proof, we established that
+
 $$
 \dot{V}(\xi) = -\alpha(\xi) d(\xi)^2,
 $$
+
 where
+
 $$
 V(\xi) = \tfrac{1}{2} d(\xi)^2.
 $$
 
 This can be rewritten as
+
 $$
 \dot{V}(\xi) = -2\alpha(\xi) V(\xi).
 $$
 
 Assuming that the gain satisfies
+
 $$
 \alpha(\xi) \ge \alpha_{\min} > 0,
 $$
+
 we obtain
+
 $$
 \dot{V}(\xi) \le -2\alpha_{\min} V(\xi).
 $$
 
 By the comparison lemma, it follows that
+
 $$
 V(t) \le V(0) e^{-2\alpha_{\min} t},
 $$
+
 which further implies
+
 $$
 d(t) \le d(0) e^{-\alpha_{\min} t}.
 $$
 
 Therefore, the convergence is exponential, with an explicit time constant
+
 $$
 \tau = \frac{1}{\alpha_{\min}}.
 $$
@@ -125,34 +136,42 @@ $$
 #### **2) Region of attraction and robustness margin**
 
 To analyze robustness, consider a perturbed system
+
 $$
 \dot{\xi} = \chi(\xi) + \mathbf{d},
 $$
+
 where $\mathbf{d}$ is a bounded disturbance.
 
 Then the Lyapunov derivative becomes
+
 $$
 \dot{V} = \nabla \phi \cdot (\chi + \mathbf{d})
 = -\alpha d^2 + \nabla \phi \cdot \mathbf{d}.
 $$
 
 Using the Cauchy–Schwarz inequality, we obtain
+
 $$
 \dot{V} \le -\alpha d^2 + d |\mathbf{d}|.
 $$
 
 This can be rewritten as
+
 $$
 \dot{V} \le -d(\alpha d - |\mathbf{d}|).
 $$
 
 Therefore, as long as
+
 $$
 |\mathbf{d}| < \alpha d,
 $$
+
 the Lyapunov function decreases.
 
 Moreover, the system is input-to-state stable (ISS) with ultimate bound
+
 $$
 d(t) \le \frac{|\mathbf{d}|_{\max}}{\alpha}.
 $$
@@ -164,12 +183,15 @@ This explicitly characterizes the robustness margin, which is directly determine
 #### **3) Effect of ESDF discretization**
 
 In practice, the gradient is computed from a discretized ESDF. Let
+
 $$
 \widehat{\nabla}\phi = \nabla\phi + \boldsymbol{\epsilon},
 $$
+
 where $\boldsymbol{\epsilon}$ denotes the discretization error.
 
 Then
+
 $$
 \dot{V} = \nabla\phi \cdot \left(\mathbf{t} - \alpha \widehat{\nabla}\phi \right)
 = -\alpha |\nabla\phi|^2 - \alpha \nabla\phi \cdot \boldsymbol{\epsilon}.
@@ -178,9 +200,11 @@ $$
 This introduces a perturbation term analogous to the disturbance case.
 
 If
+
 $$
 |\boldsymbol{\epsilon}| \le \epsilon_{\max},
 $$
+
 then the system converges to a small invariant set around the path.
 
 Moreover, the quadratic fitting procedure used in our implementation ensures $C^1$ continuity of the gradient field, which prevents discontinuities and preserves stability.
