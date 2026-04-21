@@ -8,7 +8,7 @@ We compare the proposed GVF-based method with the Fast Planner and its recoverab
 ## Fast Planner
 
 <p align="center">
-  <img src="./fast-pos.png" width="30%">
+  <img src="./figures/fast-pos.png" width="30%">
   <img src="./fast-vel.png" width="30%">
   <img src="./fast-wind.png" width="30%">
 </p>
