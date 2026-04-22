@@ -15,7 +15,7 @@ We compare the proposed GVF-based method with the Fast Planner and its recoverab
 
 F1: Position tracking performance of the Fast-Planner under disturbance.
 
-F2: Velocity profile of Fast-Planner under disturbance. Taking the Y-axis velocity in the time interval from 15\,s to 20\,s as an example, the actual velocity of the quadrotor exhibits fluctuations due to wind disturbances, while the reference velocity does not provide corresponding compensation. This leads to a gradual accumulation of tracking error and eventually results in navigation failure.
+F2: Velocity profile of Fast-Planner under disturbance. Taking the Y-axis velocity in the time interval from 15s to 20s as an example, the actual velocity of the quadrotor exhibits fluctuations due to wind disturbances, while the reference velocity does not provide corresponding compensation. This leads to a gradual accumulation of tracking error and eventually results in navigation failure.
 
 F3: Wind disturbance profile experienced by Fast-Planner during flight, where the disturbance follows a sinusoidal pattern.
 
@@ -23,6 +23,10 @@ F3: Wind disturbance profile experienced by Fast-Planner during flight, where th
   <img src="./figures/fast-sim1.png" width="75%">
   <img src="./figures/fast-sim2.png" width="75%">
 </p>
+
+F4: Performance of Fast-Planner under wind disturbances. Due to the presence of wind, this open-loop strategy gradually exhibits a delay with the reference trajectory. The moments highlighted in red correspond to collision events.
+
+F5: Local zoom-in view of Fast-Planner under wind disturbances.
 
 The original Fast Planner exhibits significant trajectory deviation and lacks effective recovery under disturbances.
 
