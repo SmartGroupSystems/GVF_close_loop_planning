@@ -11,6 +11,7 @@ We compare the proposed GVF-based method with the Fast Planner and its recoverab
   <img src="./figures/fast-pos.png" width="70%">
   <img src="./figures/fast-vel.png" width="70%">
   <img src="./figures/fast-wind.png" width="70%">
+  
   <em>Figure 1: Position, velocity, and wind disturbance responses of the UAV under the proposed method.</em>
 </p>
 
